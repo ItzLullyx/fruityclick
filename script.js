@@ -1,6 +1,6 @@
 let clickCount = 0;
 let clickCountVisible = 0;
-const boutonClick = document.getElementById("boutonClick");
+const clickButton = document.getElementById("clickButton");
 const counter = document.getElementById("counter");
 
 // Common fruits
@@ -41,7 +41,7 @@ let carambola = document.getElementById("carambola");
 let tamarillo = document.getElementById("tamarillo");
 let kiwano = document.getElementById("kiwano");
 
-boutonClick.addEventListener("click", function() {
+clickButton.addEventListener("click", function() {
     clickCount++;
     clickCountVisible++;
     counter.textContent = `Click count : ${clickCountVisible}`;
@@ -67,43 +67,43 @@ boutonClick.addEventListener("click", function() {
             let randomPickCommon = Math.floor(Math.random() * 10 + 1);
             
             if (randomPickCommon === 1) {
-                fruitUnlocked("An apple!", "Apple", apple);
+                fruitUnlocked("An apple! [COMMON]", "Apple", apple);
             };
 
             if (randomPickCommon === 2) {
-                fruitUnlocked("An orange!", "Orange", orange);
+                fruitUnlocked("An orange [COMMON]!", "Orange", orange);
             };
 
             if (randomPickCommon === 3) {
-                fruitUnlocked("A banana!", "Banana", banana);
+                fruitUnlocked("A banana! [COMMON]", "Banana", banana);
             };
 
             if (randomPickCommon === 4) {
-                fruitUnlocked("Grapes!", "Grapes", grapes);
+                fruitUnlocked("Grapes! [COMMON]", "Grapes", grapes);
             };
 
             if (randomPickCommon === 5) {
-                fruitUnlocked("A peach!", "Peach", peach);
+                fruitUnlocked("A peach! [COMMON]", "Peach", peach);
             };
 
             if (randomPickCommon === 6) {
-                fruitUnlocked("A mango!", "Mango", mango);
+                fruitUnlocked("A mango! [COMMON]", "Mango", mango);
             };
 
             if (randomPickCommon === 7) {
-                fruitUnlocked("A strawberry!", "Strawberry", strawberry);
+                fruitUnlocked("A strawberry! [COMMON]", "Strawberry", strawberry);
             };
 
             if (randomPickCommon === 8) {
-                fruitUnlocked("A blueberry!", "Blueberry", blueberry);
+                fruitUnlocked("A blueberry! [COMMON]", "Blueberry", blueberry);
             };
 
             if (randomPickCommon === 9) {
-                fruitUnlocked("A raspberry!", "Raspberry", raspberry);
+                fruitUnlocked("A raspberry! [COMMON]", "Raspberry", raspberry);
             };
 
             if (randomPickCommon === 10) {
-                fruitUnlocked("A pineapple", "Pineapple", pineapple);
+                fruitUnlocked("A pineapple! [COMMON]", "Pineapple", pineapple);
             };
         };
 
@@ -111,43 +111,43 @@ boutonClick.addEventListener("click", function() {
             let randomPickUncommon = Math.floor(Math.random() * 10 + 1);
             
             if (randomPickUncommon === 1) {
-                fruitUnlocked("A lemon!", "Lemon", lemon);
+                fruitUnlocked("A lemon! [UNCOMMON]", "Lemon", lemon);
             };
 
             if (randomPickUncommon === 2) {
-                fruitUnlocked("A lime!", "Lime", lime);
+                fruitUnlocked("A lime! [UNCOMMON]", "Lime", lime);
             };
 
             if (randomPickUncommon === 3) {
-                fruitUnlocked("A blackberry!", "Blackberry", blackberry);
+                fruitUnlocked("A blackberry! [UNCOMMON]", "Blackberry", blackberry);
             };
 
             if (randomPickUncommon === 4) {
-                fruitUnlocked("A passion fruit!", "Passion fruit", passionfruit);
+                fruitUnlocked("A passion fruit! [UNCOMMON]", "Passion fruit", passionfruit);
             };
 
             if (randomPickUncommon === 5) {
-                fruitUnlocked("An apricot!", "Apricot", apricot);
+                fruitUnlocked("An apricot! [UNCOMMON]", "Apricot", apricot);
             };
 
             if (randomPickUncommon === 6) {
-                fruitUnlocked("A watermelon!", "Watermelon", watermelon);
+                fruitUnlocked("A watermelon! [UNCOMMON]", "Watermelon", watermelon);
             };
 
             if (randomPickUncommon === 7) {
-                fruitUnlocked("A kiwi!", "Kiwi", kiwi);
+                fruitUnlocked("A kiwi! [UNCOMMON]", "Kiwi", kiwi);
             };
 
             if (randomPickUncommon === 8) {
-                fruitUnlocked("A pear!", "Pear", pear);
+                fruitUnlocked("A pear! [UNCOMMON]", "Pear", pear);
             };
 
             if (randomPickUncommon === 9) {
-                fruitUnlocked("A tomato!", "Tomato", tomato);
+                fruitUnlocked("A tomato! [UNCOMMON]", "Tomato", tomato);
             };
 
             if (randomPickUncommon === 10) {
-                fruitUnlocked("An avocado!", "Avocado", avocado);
+                fruitUnlocked("An avocado! [UNCOMMON]", "Avocado", avocado);
             };
         };
 
@@ -155,31 +155,31 @@ boutonClick.addEventListener("click", function() {
             let randomPickRare = Math.floor(Math.random() * 7 + 1);
             
             if (randomPickRare === 1) {
-                fruitUnlocked("A pomegranate!", "Pomegranate", pomegranate);
+                fruitUnlocked("A pomegranate! [RARE]", "Pomegranate", pomegranate);
             };
 
             if (randomPickRare === 2) {
-                fruitUnlocked("A papaya!", "Papaya", papaya);
+                fruitUnlocked("A papaya! [RARE]", "Papaya", papaya);
             };
 
             if (randomPickRare === 3) {
-                fruitUnlocked("A lychee!", "Lychee", lychee);
+                fruitUnlocked("A lychee! [RARE]", "Lychee", lychee);
             };
 
             if (randomPickRare === 4) {
-                fruitUnlocked("A guava!", "Guava", guava);
+                fruitUnlocked("A guava! [RARE]", "Guava", guava);
             };
 
             if (randomPickRare === 5) {
-                fruitUnlocked("A grapefruit!", "Grapefruit", grapefruit);
+                fruitUnlocked("A grapefruit! [RARE]", "Grapefruit", grapefruit);
             };
 
             if (randomPickRare === 6) {
-                fruitUnlocked("A coconut!", "Coconut", coconut);
+                fruitUnlocked("A coconut! [RARE]", "Coconut", coconut);
             };
 
             if (randomPickRare === 7) {
-                fruitUnlocked("A cactus pear!", "Cactus pear", cactuspear);
+                fruitUnlocked("A cactus pear! [RARE]", "Cactus pear", cactuspear);
             };
         };
 
@@ -187,19 +187,19 @@ boutonClick.addEventListener("click", function() {
             let randomPickLegendary = Math.floor(Math.random() * 4 + 1);
             
             if (randomPickLegendary === 1) {
-                fruitUnlocked("A pitaya!", "Pitaya", pitaya);
+                fruitUnlocked("A pitaya! [LEGENDARY]", "Pitaya", pitaya);
             };
 
             if (randomPickLegendary === 2) {
-                fruitUnlocked("A carambola!", "Carambola", carambola);
+                fruitUnlocked("A carambola! [LEGENDARY]", "Carambola", carambola);
             };
 
             if (randomPickLegendary === 3) {
-                fruitUnlocked("A tamarillo!", "Tamarillo", tamarillo);
+                fruitUnlocked("A tamarillo! [LEGENDARY]", "Tamarillo", tamarillo);
             };
 
             if (randomPickLegendary === 4) {
-                fruitUnlocked("A kiwano!", "Kiwano", kiwano);
+                fruitUnlocked("A kiwano! [LEGENDARY]", "Kiwano", kiwano);
             };
         };
     };

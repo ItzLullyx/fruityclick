@@ -22,7 +22,7 @@ html {
 
 .title {
     font-family: "Merienda Bold";
-    font-size: 70px;
+    font-size: 50px;
     color: white;
     text-shadow: 3px 3px 10px black
 }
@@ -32,7 +32,9 @@ html {
     color: white;
     padding: 25px 25px 25px 25px;
     margin-bottom: 30px;
-    width: 75vw;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: auto;
     background-image: url("./media/picnic\ texture.jpg");
     background-color: rgb(83, 8, 8);
     background-blend-mode:luminosity;
@@ -93,8 +95,8 @@ html {
 .apple1 {
     position: absolute;
     z-index: -1;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     left: 15vw;
     top: -200px;
     animation-name: appleanim;
@@ -106,8 +108,8 @@ html {
 .apple2 {
     position: absolute;
     z-index: -1;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     right: 15vw;
     top: -200px;
     animation-name: appleanim;
@@ -125,34 +127,29 @@ html {
     100% { transform: translate(0, 800px) rotateZ(360deg) }
 }
 
-@media screen and (min-width: 1250px) {
-    html {
-        overflow: hidden;
+@media screen and (min-width: 560px) {
+    .title {
+        font-size: 70px;
     }
 
+    .game {
+        width: 75vw;
+    }
+
+    .apple1 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .apple2 {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     .raritylists {
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
-
-    .titlecommon {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .titleuncommon {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .titlerare {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .titlelegendary {
-        padding-left: 20px;
-        padding-right: 20px;
     }
 }

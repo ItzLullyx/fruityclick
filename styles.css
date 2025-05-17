@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "Merienda Bold";
+    src: url("./Merienda/static/Merienda-ExtraBold.ttf")
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("./Montserrat/static/Montserrat-ExtraBold.ttf")
+}
+
+@font-face {
+    font-family: "Montserrat Light";
+    src: url("./Montserrat/static/Montserrat-Bold.ttf")
+}
+
+html {
+    background-image: url("./media/text\ texture.jpg");
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+    font-family: "Merienda Bold";
+    font-size: 70px;
+    color: white;
+    text-shadow: 3px 3px 10px black
+}
+
+.game {
+    font-family: "Montserrat Light";
+    color: white;
+    padding: 25px 25px 25px 25px;
+    margin-bottom: 30px;
+    width: 75vw;
+    background-image: url("./media/picnic\ texture.jpg");
+    background-color: rgb(83, 8, 8);
+    background-blend-mode:luminosity;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px black
+}
+
+.button:hover {
+    background-color: #2cc200;
+}
+
+.button:active {
+    background-color: white;
+    color: black;
+    transition-duration: 0s
+}
+
+.button {
+    font-family: "Montserrat Bold";
+    font-size: 25px;
+    color: white;
+    border-radius: 30px;
+    background-color: lightgreen;
+    padding: 25px 70px;
+    transition-property: background-color;
+    transition-duration: 0.3s
+}
+
+.raritylists {
+    display: flex;
+    flex-direction: column;
+}
+
+.titlecommon {
+    font-family: "Merienda Bold";
+    color: white;
+}
+
+.titleuncommon {
+    font-family: "Merienda Bold";
+    color: lightgreen;
+}
+
+.titlerare {
+    font-family: "Merienda Bold";
+    color: cyan;
+}
+
+.titlelegendary {
+    font-family: "Merienda Bold";
+    color: yellow;
+}
+
+.fruits {
+    color: grey;
+}
+
+.apple1 {
+    position: absolute;
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    left: 15vw;
+    top: -200px;
+    animation-name: appleanim;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.apple2 {
+    position: absolute;
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    right: 15vw;
+    top: -200px;
+    animation-name: appleanim;
+    animation-duration: 5s;
+    animation-delay: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes appleanim {
+    0% { transform: translate(0, 0vh) rotateZ(0deg) }
+    25% { transform: translate(0, 200px) rotateZ(90deg) }
+    50% { transform: translate(0, 400px) rotateZ(180deg) }
+    75% { transform: translate(0, 600px) rotateZ(270deg) }
+    100% { transform: translate(0, 800px) rotateZ(360deg) }
+}
+
+@media screen and (min-width: 1250px) {
+    html {
+        overflow: hidden;
+    }
+
+    .raritylists {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .titlecommon {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .titleuncommon {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .titlerare {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .titlelegendary {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
